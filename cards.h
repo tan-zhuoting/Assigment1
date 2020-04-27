@@ -68,6 +68,7 @@ public:
     void print();
     void draw();
     bool operator>(Hand& d);
+    bool operator==(Hand& d);
     void empty(); //Empty cards in hand to start the next game
     
 
@@ -84,15 +85,14 @@ public:
     //    Assigns initial amount of money
     Player(int m);
     int get_money();
-    void set_bet(int& b);
-    void reset();
+    bool set_bet(int& b);
+    void won();
+    void lost();
     
 
 private:
     int money;
     int bet;
-    Hand hand;
-    int game_num;
 
     // You decide what extra fields (if any) you'll need...
 };

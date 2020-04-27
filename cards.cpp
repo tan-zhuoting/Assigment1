@@ -216,7 +216,12 @@ void Hand::empty() {
 }
 
 bool Hand::operator>(Hand& d) {
-    if (total > d.total) return true;
+    if (total > d.total && total<=7.5) return true;
+    else return false;
+}
+
+bool Hand::operator==(Hand& d) {
+    if (total == d.total && total <= 7.5) return true;
     else return false;
 }
 
@@ -230,21 +235,26 @@ Player::Player(int m)
 {
 	money = m;
 	bet = 0;
-    game_num = 1;
 }
+
+void Player::won() { money += bet; }
+void Player::lost() { money -= bet; }
 
 int Player::get_money() {
     return money;
 }
-void Player::set_bet(int& b) {
-    bet = b;
+bool Player::set_bet(int& b) {
+    if (0 < b && b <= money) {
+        bet = b;
+        return true;
+    }
+    else {
+        return false;
+    }
+
 }
 
-void Player::reset() {
-    hand.empty();
-    game_num++;
 
-}
 
 
 

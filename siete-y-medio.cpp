@@ -16,7 +16,6 @@ using namespace std;
 
 // Non member functions implementations (if any)
 
-
 // Stub for main
 int main() {
     Player you(100), dealer(900);
