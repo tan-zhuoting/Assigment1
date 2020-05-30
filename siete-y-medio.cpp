@@ -41,6 +41,10 @@ int main() {
 
     new_round.empty();
 
+    Hand another;
+
+    if (another == new_round) std::cout << "empty sucessfully";
+
     
 
 
