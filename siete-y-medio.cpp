@@ -27,6 +27,8 @@ int main() {
     std::cout <<endl<< game_num;
 
     std::cout << "your bets: " <<bet;
+
+    you.set_bet(bet);
     
 
 
