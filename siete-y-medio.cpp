@@ -39,6 +39,9 @@ int main() {
     you.lost();
     std::cout << you.get_money();
 
+    new_round.print();
+
+
     
     
 
