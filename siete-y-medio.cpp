@@ -18,7 +18,11 @@ using namespace std;
 
 // Stub for main
 int main() {
+
+    int game_num = 1;
     Player you(100), dealer(900);
     std::cout << "You have $"<<you.get_money()<<". Enter bet: ";
+    std::cout <<endl<< game_num;
+
     return 0;
 }
