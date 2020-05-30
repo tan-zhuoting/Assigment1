@@ -34,7 +34,11 @@ int main() {
     new_round.draw();
 
     you.won();
-    cout << you.get_money();
+    std::cout << you.get_money();
+
+    you.lost();
+    std::cout << you.get_money();
+
     
     
 
