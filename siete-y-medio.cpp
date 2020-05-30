@@ -33,6 +33,8 @@ int main() {
     Hand new_round;
     new_round.draw();
 
+    you.won();
+    cout << you.get_money();
     
     
 
