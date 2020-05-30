@@ -29,6 +29,11 @@ int main() {
     std::cout << "your bets: " <<bet;
 
     you.set_bet(bet);
+
+    Hand new_round;
+    new_round.draw();
+
+    
     
 
 
