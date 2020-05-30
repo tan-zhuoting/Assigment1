@@ -18,10 +18,7 @@ using namespace std;
 
 // Stub for main
 int main() {
-
-    int game_num = 1;
-    int bet;
-    Player you(100), dealer(100);
+    Player you(100), dealer(900);
     std::cout << "You have $"<<you.get_money()<<". Enter bet: ";
     std::cin >> bet;
     std::cout <<endl<< game_num;
@@ -38,9 +35,6 @@ int main() {
 
     you.lost();
     std::cout << you.get_money();
-
-    new_round.print();
-
 
     
     
