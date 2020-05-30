@@ -45,6 +45,7 @@ int main() {
     Hand another;
 
     if (another == new_round) std::cout << "empty sucessfully";
+    if (another > new_round) std::cout << "something wrong ";
 
     
 
