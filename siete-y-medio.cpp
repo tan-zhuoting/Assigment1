@@ -21,7 +21,7 @@ int main() {
 
     int game_num = 1;
     int bet;
-    Player you(100), dealer(900);
+    Player you(100), dealer(100);
     std::cout << "You have $"<<you.get_money()<<". Enter bet: ";
     std::cin >> bet;
     std::cout <<endl<< game_num;
