@@ -39,6 +39,8 @@ int main() {
 
     new_round.draw();
 
+    new_round.empty();
+
     
 
 
